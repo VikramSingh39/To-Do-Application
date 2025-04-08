@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>ToDo App</title>
+      <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Kumbh+Sans&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js" defer></script>
+</head>
+<body>
+      <div class="input_and_search">
+      <div id="addTask">
+            <input type="text" id="input" class="input_task" placeholder="Enter Your Task">
+            <button id="add_task_btn">Add Task</button>
+       </div>
+            <br>
+            <div class="search_item">
+                  <input class="search_bar" type="text" placeholder="Search">
+                  <i class="ri-search-line" id="search_here"></i>
+            </div>
+       </div>
+       
+      <br> 
+      <div class="table_container">
+            <table >
+                  <thead>
+                        <tr>
+                              <th class="thead">Sr No</th>
+                              <th class="thead">Task</th>
+                              <th class="thead">Action</th>
+                              <th class="thead">Date</th>
+                        </tr>
+                  </thead>
+                  <tbody id="records">
+
+                  </tbody>
+            </table>
+      </div>
+</body>
+</html>

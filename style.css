@@ -1,0 +1,153 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+body{
+      color: white;
+      font-family: "Kumbh Sans", sans-serif;
+      padding: 10px;
+      width: 100%;
+}
+
+/* ======= Input and Search Item CSS ==========*/
+.input_and_search{
+      padding: 20px 10px;
+      width: 100%;
+      height: auto;
+      max-width: 900px;
+      margin: auto;
+      background-color:white;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: right;
+}
+#addTask{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline: none;
+      border: none; 
+}
+.input_task{
+      width: 60%;
+}
+.input_task, .search_bar{
+      height: 3.125rem;
+      padding: 0 1.25em;
+      font-size: 14px;
+      border: 1px solid rgba(119, 117, 117, 0.597);
+      border-radius: 4px;
+      outline: none;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+}
+.search_item{
+      position: relative;
+      margin: auto; 
+      width: 100%; 
+      display: flex;
+      justify-content: center;
+}
+.search_bar{
+      width: 40%;
+      margin-inline: auto;
+}
+#search_here{
+      position: absolute;
+      top: 50%;
+      left: 55%;
+      transform: translateY(-50%);
+      color: rgba(96, 96, 96, 0.691);
+      font-size: 2rem;
+}
+@media (min-width: 500px){
+      #search_here{
+            left: 65%;
+      }
+}
+#add_task_btn{
+      background-color: #10caf1;
+      height: 3.125rem;
+      padding: 0 1.8em;
+      color: white;
+      font-weight: 700;
+      font-size: 1rem;
+      white-space: nowrap;
+      border: 2px solid transparent;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      margin-left: -5px;
+}
+/* =========== Table Container ================ */
+.table_container{
+      width: 100%;
+      max-width: 900px;
+      margin-inline: auto;
+      background-color: white;
+      color: black;
+}
+.table_container input{
+      padding: 20px 5px;
+      width: 100%;
+      height: auto;
+      font-size: 1.2rem;
+      background-color: white;
+      overflow-x: hidden;
+      border: 1px solid grey;
+      outline: none;
+}
+.icons{
+      position: relative;
+}
+.icons i{
+      cursor: pointer;
+      font-size: 25px;
+      padding: 5px;
+}
+.edit_icon{
+      color: rgb(3, 167, 3);
+}
+.save_icon{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none; 
+      color: rgb(6, 14, 248);  
+}
+.dlt_icon{
+      color: #EB5B00;
+      margin: 10px;
+}
+.thead{
+      font-size: 1.2rem;
+      font-weight: 700;
+}
+td, th{
+      text-align: center;
+      border-bottom: 1px solid rgba(128, 127, 127, 0.651);
+      padding-block: 14px;
+} 
+td{
+
+}
+
+table{
+      width: 100%;
+      border-collapse: collapse;
+} 
+th:nth-child(1){
+      width: 7%;
+}
+th:nth-child(2){
+      width: 46%;
+}
+th:nth-child(3), th:nth-child(4){
+      width: 11%;
+}
+th:nth-child(5){
+      width: 25%;
+      font-size: 12px;
+}
